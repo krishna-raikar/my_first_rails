@@ -3,3 +3,24 @@
 <% end %>
 
 My Name is <%= @my_name %>
+<table>
+<tr><th>First Name</th> <th>Last Name</th> <th>Email</th></tr>
+<% @profiles.each do |pofile| %>
+	<tr>
+		<td><%= pofile.first_name %></td>
+		<td><%= pofile.last_name %></td>
+		<td><%= pofile.email %></td>
+	</tr>
+<% end %>
+</table>
+
+
+<br>
+<% @krishna.each do |pofile| %>
+	<tr>
+		<td><%= pofile.first_name %></td>
+		<td><%= pofile.last_name %></td>
+		<td><%= pofile.email %></td>
+	</tr>
+<% end %>
+</table>
